@@ -10,10 +10,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #ff4757;
-    color: #ffffff;
+    background-color: #76dc7a;
+    color: #020202;
 }
-
+label {
+    /* display: none; */
+    text-align: left;
+}
 nav ul {
     list-style: none;
     padding: 0;
@@ -25,7 +28,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #020202;
     text-decoration: none;
 }
 
@@ -38,14 +41,17 @@ nav ul li a {
     width: 100px;
     height: auto;
     margin-bottom: 20px;
-    animation: float 2s ease-in-out infinite;
+    animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+    50% { transform: translateY(-5px); }
 }
-
+.logo {
+    margin-left: 20px;
+    margin-top: 20px;
+}
 .screenshots img {
     width: 90%;
     max-width: 300px;
