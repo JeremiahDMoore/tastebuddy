@@ -2,9 +2,16 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
+h1 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 2.5rem;
 
+}
+h1, h2, h3 {
+    font-family: 'Questrial', sans-serif;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -64,3 +71,30 @@ nav ul li a {
         justify-content: center;
     }
 }
+.screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    height: 186px;
+    width: 120px; /* Adjust as needed for iPhone screenshot ratio */
+    margin: 5px;
+    background-color: #76dc7a;
+    border-radius: 18px;
+    opacity: 0; /* Initially hidden for animation */
+    transform: scale(1); /* Initial scale for animation */
+    transition: opacity 0.5s ease, transform 0.3s ease; /* Animation settings */
+  }
+  
+  /* .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .card {
+      width: 25%; /* Adjust as needed for larger screens *
+    }
+  }  */

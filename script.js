@@ -1,6 +1,21 @@
-// script.js
+
 document.addEventListener('DOMContentLoaded', () => {
-    const navItems = document.querySelector('nav ul');
-    // Example functionality for toggling menu in mobile view
-    // Implement as needed based on final design and requirements
-});
+    const cards = document.querySelectorAll('.card');
+  
+    // Function to animate card appearance
+    function showCard(card) {
+      card.style.opacity = 1;
+    }
+  
+    // Animate cards on page load
+    cards.forEach((card, index) => {
+      setTimeout(() => showCard(card), index * 200); // Delay for staggered effect
+    });
+  
+    // Add click event listener for scaling animation
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        card.style.transform = 'scale(1.1)';
+      });
+    });
+  });
