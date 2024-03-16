@@ -1,9 +1,43 @@
 /* style.css */
+
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: calc(1rem + 0.2vw);
+
 }
+.tastebuddy-title {
+    text-align: center;
+    animation: float 3s ease-in-out infinite;
+
+}
+.copy {
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    width: 78%;
+}
+
+.background-image {
+    background-image: url("bgdark2.png"); /* Replace with your image path */
+    background-size: cover; /* Ensures the image fills the entire background */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Fixes the image position while scrolling */
+    position: fixed; /* Keeps the image in place even when content is longer than the screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures the image stays behind other content */
+  }
+
+
 h1 {
     font-family: 'Questrial', sans-serif;
     font-size: 2.5rem;
@@ -32,23 +66,35 @@ nav ul {
 
 nav ul li {
     margin-left: 20px;
+    text-align: left;
+    font-size: 0.9rem;
 }
 
 nav ul li a {
     color: #020202;
     text-decoration: none;
 }
+li {
+    text-align: left;
+}
 
 .hero {
     text-align: center;
-    padding: 50px 20px;
+    margin-bottom: 15px;
+}
+a {
+    color: #76dc7a;
+    text-decoration: none;
+}
+a:hover {
+    color: #6200d8;
 }
 
 .app-icon {
-    width: 100px;
+    width: 110px;
     height: auto;
     margin-bottom: 20px;
-    animation: float 3s ease-in-out infinite;
+    /* animation: float 3s ease-in-out infinite; */
 }
 
 @keyframes float {
@@ -59,11 +105,11 @@ nav ul li a {
     margin-left: 20px;
     margin-top: 20px;
 }
-.screenshots img {
+/* .screenshots img {
     width: 90%;
     max-width: 300px;
     margin: 10px;
-}
+} */
 
 @media (min-width: 768px) {
     .screenshots {
@@ -78,8 +124,8 @@ nav ul li a {
   }
   
   .card {
-    height: 186px;
-    width: 120px; /* Adjust as needed for iPhone screenshot ratio */
+    height: 410px;
+    width: 194px; /* Adjust as needed for iPhone screenshot ratio */
     margin: 5px;
     background-color: #76dc7a;
     border-radius: 18px;
@@ -88,11 +134,14 @@ nav ul li a {
     transition: opacity 0.5s ease, transform 0.3s ease; /* Animation settings */
   }
   
-  /* .card img {
-    width: 100%;
-    height: auto;
+  .card img {
+    height: 410px;
+    width: 100%; /* 194:: Adjust as needed for iPhone screenshot ratio */
+    /* margin: 5px; */
+    background-color: #76dc7a;
+    border-radius: 18px;
   }
-  
+  /*
   @media (min-width: 768px) {
     .card {
       width: 25%; /* Adjust as needed for larger screens *
