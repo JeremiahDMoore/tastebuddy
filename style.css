@@ -1,4 +1,12 @@
 /* style.css */
+body, html {
+    all: initial;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: calc(1rem + 0.2vw);
+}
 
 body, html {
     padding: 0;
@@ -45,10 +53,10 @@ h1, h2, h3 {
 }
 header {
     width: 100%;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     background-color: #76dc7a;
     color: #020202;
 }
@@ -140,7 +148,7 @@ a:hover {
     border-radius: 18px;
   }
   
-  @media (max-width: 356px) {
+  @media (max-width: 387px) {
     .background-image {
        background-color: #020202;
         position: fixed; /* Keeps the image in place even when content is longer than the screen */
