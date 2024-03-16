@@ -32,7 +32,8 @@ body, html {
     position: fixed; /* Keeps the image in place even when content is longer than the screen */
     top: 0;
     left: 0;
-    width: 100%;
+    min-width: 312px;
+    max-width: 100%;
     height: 100%;
     z-index: -1; /* Ensures the image stays behind other content */
   }
@@ -47,6 +48,7 @@ h1, h2, h3 {
     font-family: 'Questrial', sans-serif;
 }
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
