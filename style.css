@@ -3,10 +3,53 @@ body, html {
     all: initial;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    color: #FFFFFF;
+    color: #f4f3f5;
     text-align: center;
     font-size: calc(1rem + 0.2vw);
 }
+footer {
+    margin-top: 60px;
+    border-top: solid #f4f3f57e;
+    border-width: 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #0202027c;
+    bottom: 0;
+    width: 100%;
+}
+/* CTA Button Styling */
+.cta-container {
+    text-align: center; /* This will center the inline elements within */
+    margin: 20px 0; /* Add some vertical space around the CTA */
+}
+.cta-button {
+    padding: 10px 20px;
+    background-color: #6200d8; /* Replace with your specific green color */
+    color: #f4f3f5; /* Replace with your specific text color if different */
+    /* font-weight: bold; */
+    text-decoration: none;
+    border: 1px solid #f4f3f5;
+    border-radius: 999px;
+    width: 70%;
+    display: inline-block;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    align-items: center;
+  }
+  
+  .cta-button:hover,
+  .cta-button:focus { /* Added :focus for keyboard accessibility */
+    background-color: #FFEB3B; /* Replace with your specific yellow color */
+    border-color: #020202; /* The border takes the default text color */
+    color: #020202; /* Optional: Change text color on hover if needed */
+  }
+  
+  /* Ensure the button is accessible with keyboard navigation */
+  .cta-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+  }
+  
 
 body, html {
     padding: 0;
@@ -45,7 +88,7 @@ body, html {
 
 h1 {
     font-family: 'Questrial', sans-serif;
-    font-size: 2.1rem;
+    font-size: 2.5rem;
 
 }
 h1, h2, h3 {
@@ -95,8 +138,11 @@ a {
     text-decoration: none;
 }
 a:hover {
+    color: #e9ff24;
+    transition: 0.3s;
+}
+nav ul li a:hover {
     color: #6200d8;
-    transform: scale(1.1);
     transition: 0.3s;
 }
 
@@ -152,9 +198,36 @@ a:hover {
     border-radius: 18px;
   }
   
-  @media only screen and (max-width: 768px) { /* Adjust the breakpoint as needed */
+ /* Use a media query for devices with a width of less than 600 pixels */
+@media only screen and (max-width: 788px) {
     .background-image {
-      background-size: contain; /* Or adjust other properties as desired */
+      background-image: url('bgdark2.png'); /* Path to the background image */
+      background-size: cover;
+      background-position: center center; /* Adjust this value if a different part of the image is more important */
+      background-repeat: no-repeat;
+      background-attachment: scroll; /* Use 'fixed' for a parallax effect */
     }
-   
-  } 
+    .app-icon {
+        width: 68px;
+        height: auto;
+        margin-bottom: 20px;
+        /* animation: float 3s ease-in-out infinite; */
+    }
+    h1 {
+        font-family: 'Questrial', sans-serif;
+        font-size: 1.9rem;
+    
+    }
+  }
+  
+  /* Use a media query for devices with a width of 600 pixels or more */
+  @media only screen and (min-width: 788px) {
+    .background-image {
+      background-image: url('bgdark2.png'); /* Path to the background image */
+      background-size: cover;
+      background-position: center center; /* This will ensure that the image covers the entire section */
+      background-repeat: no-repeat;
+      background-attachment: scroll; /* Use 'fixed' for a parallax effect */
+    }
+  }
+  
