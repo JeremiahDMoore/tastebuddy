@@ -45,7 +45,7 @@ body, html {
 
 h1 {
     font-family: 'Questrial', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
 
 }
 h1, h2, h3 {
@@ -79,6 +79,8 @@ nav ul li {
 nav ul li a {
     color: #020202;
     text-decoration: none;
+    transition: 0.3s;
+
 }
 li {
     text-align: left;
@@ -94,6 +96,8 @@ a {
 }
 a:hover {
     color: #6200d8;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .app-icon {
@@ -148,10 +152,9 @@ a:hover {
     border-radius: 18px;
   }
   
-  @media (max-width: px) {
-    h1 {
-        font-family: 'Questrial', sans-serif;
-        font-size: 1.9rem;
+  @media only screen and (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .background-image {
+      background-size: contain; /* Or adjust other properties as desired */
     }
    
   } 
