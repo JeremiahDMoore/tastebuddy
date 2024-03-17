@@ -111,6 +111,8 @@ label {
 li:hover {
     cursor: pointer;
     color:#FFEB3B;
+    transform: scale(1.05); /* Initial scale for animation */
+    transition: transform 0.3s ease; /* Animation settings */
 }
 nav ul {
     list-style: none;
@@ -132,6 +134,8 @@ nav ul li a {
 }
 li {
     text-align: left;
+    transform: scale(1); /* Initial scale for animation */
+    transition: transform 0.3s ease; /* Animation settings */
 }
 
 .hero {
