@@ -24,14 +24,14 @@ footer {
     margin: 20px 0; /* Add some vertical space around the CTA */
 }
 .cta-button {
-    padding: 10px 20px;
+    padding: 14px 20px;
     background-color: #6200d8; /* Replace with your specific green color */
     color: #f4f3f5; /* Replace with your specific text color if different */
     /* font-weight: bold; */
-    text-decoration: none;
     border: 1px solid #f4f3f5;
     border-radius: 999px;
-    width: 70%;
+    width: 50%;
+    text-decoration: none;
     display: inline-block;
     transition: background-color 0.3s ease, border-color 0.3s ease;
     align-items: center;
@@ -218,6 +218,9 @@ nav ul li a:hover {
         font-size: 1.9rem;
     
     }
+    .cta-button{
+        width: 75%;
+    }
   }
   
   /* Use a media query for devices with a width of 600 pixels or more */
@@ -226,8 +229,8 @@ nav ul li a:hover {
       background-image: url('bgdark2.png'); /* Path to the background image */
       background-size: cover;
       background-position: center center; /* This will ensure that the image covers the entire section */
-      background-repeat: no-repeat;
-      background-attachment: scroll; /* Use 'fixed' for a parallax effect */
+      background-repeat:repeat-y;
+      background-attachment: fixed; /* Use 'fixed' for a parallax effect */
     }
   }
   
