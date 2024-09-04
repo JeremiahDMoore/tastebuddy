@@ -215,22 +215,24 @@ nav ul li a:hover {
       background-size: cover;
       background-position: center center; /* Adjust this value if a different part of the image is more important */
       background-repeat: no-repeat;
-      background-attachment: fixed; /* Use 'fixed' for a parallax effect */
+      background-attachment: scroll; /* Use 'fixed' for a parallax effect */
     }
     .app-icon {
-        width: 68px;
+        width: 55px;
         height: auto;
         margin-bottom: 20px;
         /* animation: float 3s ease-in-out infinite; */
     }
     .app-script {
-        padding-top: 130px;
+        padding: 0 10px;
+        width: 220px;
     }
     h1 {
         font-family: 'Questrial', sans-serif;
-        font-size: 1.9rem;
+        font-size: 1.4rem;
     
     }
+  
     .cta-button{
         width: 75%;
     }
@@ -243,7 +245,7 @@ nav ul li a:hover {
       background-size: cover;
       background-position: center center; /* This will ensure that the image covers the entire section */
       background-repeat:repeat-y;
-      background-attachment: fixed; /* Use 'fixed' for a parallax effect */
+      background-attachment: scroll; /* Use 'fixed' for a parallax effect */
     }
   }
   
