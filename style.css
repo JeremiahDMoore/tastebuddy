@@ -3,7 +3,7 @@ body, html {
     all: initial;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    color: #f4f3f5;
+    color: #f4f3f5; /* Reverted to original body text color */
     text-align: center;
     font-size: calc(1rem + 0.2vw);
 }
@@ -35,37 +35,34 @@ footer {
     display: inline-block;
     transition: background-color 0.3s ease, border-color 0.3s ease;
     align-items: center;
-  }
-  
-  .cta-button:hover,
-  .cta-button:focus { /* Added :focus for keyboard accessibility */
+}
+.cta-button:hover,
+.cta-button:focus { /* Added :focus for keyboard accessibility */
     background-color: #FFEB3B; /* Replace with your specific yellow color */
     border-color: #020202; /* The border takes the default text color */
     color: #020202; /* Optional: Change text color on hover if needed */
-  }
-  
-  /* Ensure the button is accessible with keyboard navigation */
-  .cta-button:focus {
+}
+
+/* Ensure the button is accessible with keyboard navigation */
+.cta-button:focus {
     outline: none;
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
-  }
-  
+}
 
 body, html {
     padding: 0;
     font-family: 'Lato', sans-serif;
-    color: #FFFFFF;
+    color: #f4f3f5; /* Reverted to original body text color */
     text-align: center;
     font-size: calc(1rem + 0.2vw);
 }
 .tastebuddy-title {
     text-align: center;
     animation: float 3s ease-in-out infinite;
-
 }
 .copy {
     text-align: center;
-    color: #FFFFFF;
+    color: #f4f3f5; /* Reverted to original body text color */
     margin-left: 11%;
     margin-bottom: 5%;
     margin-top: 5%;
@@ -73,7 +70,7 @@ body, html {
 }
 
 .background-image {
-    background-image: url("bgone.png"); /* Replace with your image path */
+    background-image: url("bgone.png"); /* Reverted to original background image */
     background-size: cover; /* Ensures the image fills the entire background */
     background-position: center; /* Centers the image */
     background-attachment: fixed; /* Fixes the image position while scrolling */
@@ -82,15 +79,13 @@ body, html {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: #020202;
+    background-color: #020202; /* Reverted to original background color */
     z-index: -1; /* Ensures the image stays behind other content */
-  }
-
+}
 
 h1 {
     font-family: 'Questrial', sans-serif;
     font-size: 2.5rem;
-
 }
 h1, h2, h3 {
     font-family: 'Questrial', sans-serif;
@@ -131,7 +126,6 @@ nav ul li a {
     color: #020202;
     text-decoration: none;
     transition: 0.3s;
-
 }
 li {
     text-align: left;
@@ -187,9 +181,9 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  .card {
+}
+
+.card {
     height: 410px;
     width: 194px; /* Adjust as needed for iPhone screenshot ratio */
     margin: 5px;
@@ -198,24 +192,24 @@ nav ul li a:hover {
     opacity: 0; /* Initially hidden for animation */
     transform: scale(1); /* Initial scale for animation */
     transition: opacity 0.5s ease, transform 0.3s ease; /* Animation settings */
-  }
-  
-  .card img {
+}
+
+.card img {
     height: 410px;
     width: 100%; /* 194:: Adjust as needed for iPhone screenshot ratio */
     /* margin: 5px; */
     background-color: #76dc7a;
     border-radius: 18px;
-  }
-  
- /* Use a media query for devices with a width of less than 600 pixels */
+}
+
+/* Use a media query for devices with a width of less than 600 pixels */
 @media only screen and (max-width: 788px) {
     .background-image {
-      background-image: url('bgdark2.png'); /* Path to the background image */
-      background-size: cover;
-      background-position: center center; /* Adjust this value if a different part of the image is more important */
-      background-repeat: no-repeat;
-      background-attachment: scroll; /* Use 'fixed' for a parallax effect */
+        background-image: url("bgone.png"); /* Reverted to original background image */
+        background-size: cover;
+        background-position: center center; /* Adjust this value if a different part of the image is more important */
+        background-repeat: no-repeat;
+        background-attachment: scroll; /* Use 'fixed' for a parallax effect */
     }
     .app-icon {
         width: 55px;
@@ -230,22 +224,20 @@ nav ul li a:hover {
     h1 {
         font-family: 'Questrial', sans-serif;
         font-size: 1.4rem;
-    
     }
-  
+
     .cta-button{
         width: 75%;
     }
-  }
-  
-  /* Use a media query for devices with a width of 600 pixels or more */
-  @media only screen and (min-width: 788px) {
+}
+
+/* Use a media query for devices with a width of 600 pixels or more */
+@media only screen and (min-width: 788px) {
     .background-image {
-      background-image: url('bgdark2.png'); /* Path to the background image */
-      background-size: cover;
-      background-position: center center; /* This will ensure that the image covers the entire section */
-      background-repeat:repeat-y;
-      background-attachment: scroll; /* Use 'fixed' for a parallax effect */
+        background-image: url('bgdark2.png'); /* Reverted to original background image */
+        background-size: cover;
+        background-position: center center; /* This will ensure that the image covers the entire section */
+        background-repeat:repeat-y;
+        background-attachment: scroll; /* Use 'fixed' for a parallax effect */
     }
-  }
-  
+}
