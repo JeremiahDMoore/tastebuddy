@@ -15,8 +15,8 @@
   header {
     text-align: center;
     padding: 20px;
-    background-color: #6380ff;
-    color: white;
+    background-color: #76dc7a;
+    color: #020202;
   }
   
   h1 {
@@ -26,13 +26,13 @@
   main {
     max-width: 800px;
     margin: 0 auto;
-    background: white;
+    background: #dedede;
     padding: 20px;
     border-radius: 8px;
   }
   
   h2, h3 {
-    color: #6380ff;
+    color: #020202;
   }
   
   ul {
