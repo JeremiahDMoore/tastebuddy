@@ -241,3 +241,22 @@ nav ul li a:hover {
         background-attachment: scroll; /* Use 'fixed' for a parallax effect */
     }
 }
+.floating-chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    background-color: #007bff; /* Button color */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.floating-chat-button img {
+    width: 30px; /* Adjust icon size as needed */
+    height: 30px; /* Adjust icon size as needed */
+}
