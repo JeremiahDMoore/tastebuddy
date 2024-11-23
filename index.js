@@ -120,14 +120,14 @@ async function sendMessage(messageText) {
     scrollToBottom();
 }
 
-// Add message to chat
 function addMessageToChat(role, content) {
     const messagesContainer = document.querySelector('.messages-container');
     const messageDiv = document.createElement('div');
     messageDiv.className = `message ${role}-message`;
     
-    const parsedContent = parseBoldText(content);
-    messageDiv.innerHTML = parsedContent;
+    // Format content to replace newlines with <br> and wrap paragraphs
+    const formattedContent = content.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('');
+    messageDiv.innerHTML = formattedContent;
 
     if (role === 'ai') {
         const actionsDiv = document.createElement('div');
