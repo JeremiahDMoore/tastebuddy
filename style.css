@@ -245,9 +245,9 @@ nav ul li a:hover {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 60px; /* Adjust size as needed */
-    height: 60px; /* Adjust size as needed */
-    background-color: #007bff; /* Button color */
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    background-color: rgba(0, 0, 0, 0.2); /* Button color */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -257,6 +257,6 @@ nav ul li a:hover {
 }
 
 .floating-chat-button img {
-    width: 30px; /* Adjust icon size as needed */
-    height: 30px; /* Adjust icon size as needed */
+    width: 80px; /* Adjust icon size as needed */
+    height: 80px; /* Adjust icon size as needed */
 }
